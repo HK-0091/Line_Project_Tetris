@@ -1,0 +1,532 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 10px; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: black; }
+
+.mainGamePage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: 31.8181vw;
+  margin-left: -23.1818vw;
+  margin-top: -15.909vw; }
+  .mainGamePage .bg-1 {
+    width: 6.8181vw;
+    top: 25.909vw;
+    left: 9.5545vw; }
+  .mainGamePage .bg-2 {
+    width: 9.09vw;
+    top: 30.909vw;
+    left: 0.4636vw; }
+  .mainGamePage .bg-3 {
+    width: 10.4545vw;
+    top: 27.727vw;
+    left: -8.6272vw; }
+  .mainGamePage .bg-4 {
+    width: 9.5454vw;
+    top: 20.4545vw;
+    left: 1.8272vw; }
+  .mainGamePage .bg-5 {
+    opacity: 0.6;
+    top: -5.4545vw;
+    left: 22.7272vw;
+    z-index: 10;
+    width: 40vw; }
+  .mainGamePage .tableBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10vw;
+    margin-top: -16vw;
+    background-color: black;
+    width: 18.1818vw;
+    height: 31.8181vw;
+    border: 0.909vw solid #ed6d3d;
+    z-index: 100; }
+  .mainGamePage .startBtn {
+    position: absolute;
+    top: 12.7272vw;
+    left: 36.8272vw;
+    width: 7.2727vw;
+    height: 2.2727vw;
+    font-size: 3.1818vw;
+    font-family: 'Dongle', sans-serif;
+    line-height: 2.7272vw;
+    z-index: 100; }
+  .mainGamePage .startBtn:hover {
+    cursor: pointer; }
+  .mainGamePage .resetBtn {
+    top: 15.909vw; }
+  .mainGamePage .rankBtn {
+    top: 19.1vw; }
+  .mainGamePage .manipulation {
+    background-color: white;
+    width: 28vw;
+    margin-left: 12vw;
+    margin-top: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+    border-radius: 1vw;
+    border: 0.5vw solid #ed6d3d;
+    height: 35vw;
+    z-index: 2000;
+    font-size: 10vw;
+    height: 11vw; }
+    .mainGamePage .manipulation .arrowKey {
+      width: 3vw;
+      height: 3vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: gray;
+      margin-left: -9.5vw;
+      border-radius: 0.4vw; }
+    .mainGamePage .manipulation .upKey {
+      margin-top: -3.5vw; }
+    .mainGamePage .manipulation .downKey {
+      margin-top: -0.3vw; }
+    .mainGamePage .manipulation .leftKey {
+      margin-left: -12.7vw;
+      margin-top: -0.3vw; }
+    .mainGamePage .manipulation .rightKey {
+      margin-left: -6.3vw;
+      margin-top: -0.3vw; }
+    .mainGamePage .manipulation .spacebarKey {
+      margin-top: -0.3vw;
+      margin-left: 0.5vw;
+      width: 12vw;
+      text-align: center; }
+  .mainGamePage .mainTitleImage {
+    position: absolute;
+    top: -30%;
+    margin-left: -25.5vw;
+    left: 50%;
+    width: 51vw; }
+  .mainGamePage .rankPage {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+    border-radius: 1vw;
+    border: 0.5vw solid #ed6d3d;
+    width: 20vw;
+    height: 35vw;
+    margin-top: -18vw;
+    margin-left: -41vw;
+    z-index: 2000;
+    font-size: 10vw; }
+    .mainGamePage .rankPage .myRankBox {
+      position: absolute;
+      top: 1.5%;
+      background-color: white;
+      width: 95%;
+      height: 13%;
+      border-radius: 0.5vw; }
+      .mainGamePage .rankPage .myRankBox .myRankTitle {
+        height: 50%;
+        width: 100%; }
+        .mainGamePage .rankPage .myRankBox .myRankTitle .myRankTitle1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 33.333%;
+          height: 100%;
+          float: left;
+          text-align: center;
+          font-size: 1.5vw;
+          font-family: 'Black Han Sans', sans-serif;
+          line-height: 100%; }
+        .mainGamePage .rankPage .myRankBox .myRankTitle .myRankTitle2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 33.333%;
+          height: 100%;
+          float: left;
+          text-align: center;
+          font-size: 1.5vw;
+          font-family: 'Black Han Sans', sans-serif;
+          line-height: 100%;
+          transform: translate(-1vw, 0); }
+        .mainGamePage .rankPage .myRankBox .myRankTitle .myRankTitle3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 33.333%;
+          height: 100%;
+          float: left;
+          text-align: center;
+          font-size: 1.5vw;
+          font-family: 'Black Han Sans', sans-serif;
+          line-height: 100%;
+          transform: translate(-0.5vw, 0); }
+      .mainGamePage .rankPage .myRankBox .myRankScore {
+        height: 50%;
+        width: 100%; }
+      .mainGamePage .rankPage .myRankBox .myRankScore1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.333%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        font-size: 1.5vw;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 100%;
+        transform: translate(0, -0.5vw); }
+      .mainGamePage .rankPage .myRankBox .myRankScore2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.333%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        font-size: 1.5vw;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 100%;
+        transform: translate(-1vw, -0.4vw); }
+      .mainGamePage .rankPage .myRankBox .myRankScore3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.333%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        font-size: 1.5vw;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 100%;
+        transform: translate(-0.5vw, -0.4vw); }
+    .mainGamePage .rankPage .rankBox {
+      background-color: white;
+      position: absolute;
+      top: 16%;
+      width: 95%;
+      height: 82.5%;
+      border-radius: 0.5vw;
+      overflow: scroll; }
+      .mainGamePage .rankPage .rankBox .rankTitle {
+        display: flex;
+        width: 100%;
+        height: 5%;
+        font-family: 'Noto Sans KR', sans-serif;
+        justify-content: space-around;
+        align-items: center; }
+        .mainGamePage .rankPage .rankBox .rankTitle .rankTitle1, .mainGamePage .rankPage .rankBox .rankTitle .rankTitle2, .mainGamePage .rankPage .rankBox .rankTitle .rankTitle3 {
+          font-size: 1vw;
+          font-weight: bold; }
+        .mainGamePage .rankPage .rankBox .rankTitle .rankTitle1 {
+          transform: translate(-1vw, 0); }
+        .mainGamePage .rankPage .rankBox .rankTitle .rankTitle3 {
+          transform: translate(1vw, 0); }
+      .mainGamePage .rankPage .rankBox .userRank {
+        width: 107%;
+        height: 5%;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        transform: translate(-1.4vw, 0); }
+        .mainGamePage .rankPage .rankBox .userRank .userRank1, .mainGamePage .rankPage .rankBox .userRank .userRank2, .mainGamePage .rankPage .rankBox .userRank .userRank3 {
+          font-size: 1vw;
+          width: 33.33%;
+          float: left; }
+        .mainGamePage .rankPage .rankBox .userRank .userRank1 {
+          transform: translate(-0.3vw, 0); }
+        .mainGamePage .rankPage .rankBox .userRank .userRank3 {
+          transform: translate(-1vw, 0);
+          text-align: right; }
+    .mainGamePage .rankPage .rankBox::-webkit-scrollbar {
+      display: none; }
+  .mainGamePage .userNameBox {
+    width: 16vw;
+    height: 3vw;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    margin-top: -10.5vw;
+    margin-left: -8.48vw;
+    border-radius: 0.2vw;
+    border: 0.5vw solid #E5E5E5;
+    z-index: 2000;
+    animation-name: boxOpacity;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; }
+    .mainGamePage .userNameBox .userNameText {
+      width: 80%;
+      background-color: white;
+      text-align: center;
+      font-size: 1.5vw;
+      font-family: 'Noto Sans KR', sans-serif; }
+    .mainGamePage .userNameBox .userNameBtn {
+      width: 20%;
+      font-size: 1vw;
+      color: black;
+      text-align: center;
+      line-height: 3vw;
+      background-color: #E5E5E5;
+      font-family: 'Noto Sans KR', sans-serif; }
+    .mainGamePage .userNameBox .userNameBtn:hover {
+      cursor: pointer; }
+    .mainGamePage .userNameBox .userNameBtn:active {
+      opacity: 0.8; }
+@keyframes boxOpacity {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+  .mainGamePage .backgroundImage {
+    position: absolute;
+    opacity: 0.8;
+    z-index: 20; }
+  .mainGamePage .cover {
+    position: absolute;
+    top: 3.6363vw;
+    left: 37.7363vw;
+    background-color: white;
+    width: 7.2727vw;
+    height: 7.2727vw;
+    margin-left: -0.909vw;
+    z-index: 1000;
+    border-radius: 0.3181vw;
+    opacity: 1; }
+  .mainGamePage .bestScoreValue {
+    top: 16.3636vw;
+    left: 5.9181vw; }
+  .mainGamePage .bestScore {
+    top: 13.6363vw;
+    left: 5.9181vw;
+    line-height: 0.9; }
+  .mainGamePage .idModalBox {
+    position: absolute;
+    background-color: black;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    width: 20vw;
+    height: 12vw;
+    margin-top: -13vw;
+    margin-left: -10.5vw;
+    border-radius: 1vw;
+    border: 0.5vw solid gold;
+    z-index: 2000;
+    font-size: 10vw;
+    display: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    text-align: center; }
+    .mainGamePage .idModalBox .idModalBoxClose, .mainGamePage .idModalBox .idSpan {
+      color: white; }
+    .mainGamePage .idModalBox .idSpan {
+      font-size: 2vw;
+      margin: 3vw 0; }
+    .mainGamePage .idModalBox .idModalBoxClose {
+      margin-bottom: 1.2vw;
+      font-size: 1.5vw;
+      color: #ed6d3d; }
+    .mainGamePage .idModalBox .idModalBoxClose:hover {
+      cursor: pointer; }
+    .mainGamePage .idModalBox .idModalBoxClose:active {
+      opacity: 0.8; }
+  .mainGamePage .nextContent {
+    position: absolute;
+    top: 3.6363vw;
+    left: 37.7363vw;
+    width: 7.2727vw;
+    height: 7.2727vw;
+    margin-left: -0.909vw;
+    z-index: 800;
+    background-color: transparent; }
+    .mainGamePage .nextContent .nextTetris {
+      width: 7.2727vw; }
+  .mainGamePage .nextContentBg {
+    position: absolute;
+    background-color: white;
+    top: 3.6363vw;
+    left: 37.7363vw;
+    width: 7.2727vw;
+    height: 7.2727vw;
+    margin-left: -0.909vw;
+    z-index: 700;
+    border-radius: 0.2272vw;
+    opacity: 0.5; }
+  .mainGamePage .gameValue {
+    position: absolute;
+    font-size: 1.8181vw;
+    font-family: 'Sigmar', cursive;
+    width: 6.8181vw;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    z-index: 100; }
+  .mainGamePage .userName {
+    top: 106%;
+    left: 50%;
+    width: 48vw;
+    margin-left: -24vw;
+    height: 1.5vw;
+    opacity: 0.7;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2vw; }
+  .mainGamePage .level {
+    top: 0vw;
+    left: 5.9181vw; }
+  .mainGamePage .next {
+    top: 0vw;
+    left: 36.3727vw; }
+  .mainGamePage .levelValue {
+    top: 1.8181vw;
+    left: 5.9181vw; }
+  .mainGamePage .score {
+    top: 6.8181vw;
+    left: 5.9181vw; }
+  .mainGamePage .scoreValue {
+    top: 8.6363vw;
+    left: 5.9181vw; }
+
+.gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -7.44vw;
+  margin-top: -15.2vw;
+  background-color: gray;
+  width: 18.4vw;
+  height: 32vw;
+  opacity: 0.5;
+  display: none;
+  z-index: 900; }
+
+.gameOverResetBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Sigmar', cursive;
+  font-size: 2.2727vw;
+  line-height: 2.2727vw;
+  text-align: center;
+  margin-top: -1.1363vw;
+  margin-left: -2.45vw;
+  width: 8.1818vw;
+  height: 2.2727vw;
+  display: none;
+  z-index: 1000; }
+
+.gameOverResetBtn:hover {
+  cursor: pointer; }
+
+.gameOverResetBtn:active {
+  opacity: 0.8; }
+
+.gameOverText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -9.5454vw;
+  margin-left: -8.5763vw;
+  color: white;
+  font-family: 'Sigmar', cursive;
+  width: 20.4545vw;
+  height: 3.6363vw;
+  line-height: 3.6363vw;
+  font-size: 3.6363vw;
+  text-align: center;
+  display: none;
+  z-index: 1000; }
+
+tr > td {
+  outline: 0.06818vw solid black;
+  width: 4.5454vw;
+  height: 1.5909vw;
+  opacity: 0.7; }
+
+.iContent {
+  background-color: #00CC00; }
+
+.oContent {
+  background-color: #FFFF00; }
+
+.zContent {
+  background-color: #FF0000; }
+
+.sContent {
+  background-color: #9966FF; }
+
+.jContent {
+  background-color: #0099FF; }
+
+.lContent {
+  background-color: orange; }
+
+.tContent {
+  background-color: violet; }
+
+.portfolioText {
+  position: absolute;
+  font-family: 'Noto Serif KR', serif;
+  width: 25vw;
+  height: 1vw;
+  top: 112%;
+  left: 50%;
+  margin-left: -6.5vw;
+  color: white;
+  font-size: 0.8vw;
+  opacity: 0.5; }
+
+.guideFrame {
+  height: 16.66666%;
+  width: 100%;
+  background-color: white; }
+
+.guideText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2vw;
+  color: black;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold; }
+
+.changeText {
+  margin-left: -10vw;
+  margin-top: -5.3vw; }
+
+.leftText {
+  margin-top: 2.8vw;
+  margin-left: -13vw; }
+
+.downText {
+  margin-top: 2.8vw;
+  margin-left: -9.7vw; }
+
+.rightText {
+  margin-left: -5.3vw;
+  margin-top: 2.8vw; }
+
+.dropText {
+  margin-left: 5vw;
+  margin-top: 2.8vw; }
+
+.xi-arrow {
+  font-size: 3vw; }
+
+/*# sourceMappingURL=tetrisResult.css.map */

@@ -1,0 +1,89 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title 광호 테트리스
+        link(rel="icon" type="image/x-icon" href="../img/favicon.ico")
+        script(src="//code.jquery.com/jquery-1.11.0.min.js")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Courier+Prime&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Dongle:wght@300&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css")
+        link(rel="stylesheet" href="./css/tetrisResult.css")
+    body
+        section(class="mainGamePage")
+            //-userName
+            .userNameBox    
+                input(type="text" class="userNameText" placeholder="ID" maxlength='10')
+                .userNameBtn#userNameBtn 확인
+            //-img
+            p(class="userName gameValue") ID를 입력하세요
+            img(class='mainTitleImage' src="./img/mainTitleImage.png")
+            img(class='backgroundImage bg-1' src="./img/BG-1.png")
+            img(class='backgroundImage bg-2' src="./img/BG-2.png")
+            img(class='backgroundImage bg-3' src="./img/BG-3.png")
+            img(class='backgroundImage bg-4' src="./img/BG-4.png")
+            img(class='backgroundImage bg-5' src="./img/BG-5.png")
+            //-score, level
+            p(class="score gameValue") SCORE
+            p(class="scoreValue gameValue" id="scoreValue") 0
+            p(class="bestScore gameValue") BEST SCORE
+            p(class="bestScoreValue gameValue" id="bestScoreValue") 0
+            p(class="level gameValue") LEVEL
+            p(class="levelValue gameValue") 1
+            //-rank, manipulation, modal
+            .rankPage#rankPage 
+                .myRankBox
+                    .myRankTitle
+                        .myRankTitle1   ID
+                        .myRankTitle2   현재 점수
+                        .myRankTitle3   최고 점수
+                    .myRankScore
+                        .myRankScore1#myRankScore1
+                        .myRankScore2#myRankScore2
+                        .myRankScore3#myRankScore3
+                .rankBox
+                    .rankTitle
+                        .rankTitle1 RANK
+                        .rankTitle2 ID
+                        .rankTitle3 최고 점수
+            .manipulation#manipulation
+                .upKey.arrowKey 
+                    i(class="xi-arrow-up xi-arrow")
+                span.changeText.guideText change
+                .leftKey.arrowKey
+                    i(class="xi-arrow-left xi-arrow")
+                span.leftText.guideText left
+                .downKey.arrowKey 
+                    i(class="xi-arrow-down xi-arrow")
+                span.downText.guideText down
+                .rightKey.arrowKey
+                    i(class="xi-arrow-right xi-arrow")
+                span.rightText.guideText right
+                .spacebarKey.arrowKey 
+                    i(class="xi-space-bar xi-arrow")
+                span.dropText.guideText drop
+            .idModalBox#idModalBox
+                .idSpan ID를 입력하세요.
+                .idModalBoxClose#idModalBoxClose 확인
+            //-table
+            tableBody(class="tableBody tableBox" id="tableBody")
+            //-nextContent
+            p(class="next gameValue") NEXT
+            .cover
+            .nextContent
+            .nextContentBg
+            //-start, reset
+            button(class="startBtn" id="startBtn") START
+            button(class="startBtn resetBtn" id="resetBtn") RESET
+            button(class="startBtn rankBtn" id="rankBtn") RANK
+            p(class="portfolioText") 포트폴리오 용으로 제작되었습니다.
+        .gameOver
+        p(class="gameOverText" id="gameOverText") GAME OVER
+        .gameOverResetBtn#gameOverResetBtn RESET
+        script(src="./js/tetrisResult.js")
